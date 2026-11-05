@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Diwali, My Love ✨</title>
+<style>
+:root{--wine:#4b2948;--mauve:#9d718f;--pink:#f4cbd8;--gold:#f4d89a;--cream:#fff4e9}
+*{box-sizing:border-box}
+body{margin:0;color:var(--cream);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(circle at 20% 10%,#8c587c 0,#563451 38%,#291d35 100%);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.24;background-image:radial-gradient(#ffe6a8 1px,transparent 1px);background-size:35px 35px;animation:twinkle 4s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.55}}
+header{text-align:center;padding:58px 18px 32px;position:relative}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;color:var(--gold);font:12px Arial,sans-serif}
+h1{font-size:clamp(38px,8vw,70px);font-weight:normal;line-height:1.05;margin:16px 0;color:#ffe5c2;text-shadow:0 0 25px #f2b7c9}
+.subtitle{font-size:18px;color:#f8dce7;line-height:1.7}
+.name{color:var(--gold);font-style:italic}
+.music{display:inline-block;margin-top:18px;padding:12px 22px;border-radius:30px;background:linear-gradient(120deg,#f4d89a,#e9b8c9);color:#4b2948;text-decoration:none;font: bold 13px Arial,sans-serif;box-shadow:0 6px 24px #160e2b66}
+main{max-width:980px;margin:auto;padding:12px 18px 70px}
+.intro{max-width:700px;margin:0 auto 35px;text-align:center;padding:24px;border:1px solid #f4d89a66;border-radius:25px;background:#ffffff0d;backdrop-filter:blur(5px);line-height:1.8}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:17px}
+.card{border:1px solid #f4d89a88;border-radius:22px;padding:22px 18px;background:linear-gradient(145deg,#ffffff18,#ffffff08);box-shadow:0 12px 35px #160e2b55;min-height:190px;cursor:pointer;text-align:center;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);border-color:#ffe7b5}
+.emoji{font-size:35px;display:block;margin-bottom:12px}
+.card h2{font-weight:normal;color:#ffe2b7;font-size:23px;margin:8px 0}
+.card p{color:#f5dce7;line-height:1.6;font-size:14px}
+.detail{display:none;margin-top:14px;padding:14px;border-radius:15px;background:#2b1d35aa;color:#fff0e8;line-height:1.8;font-size:15px}
+.card.open .detail{display:block;animation:reveal .35s ease}
+@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.letter{margin:38px auto 0;max-width:760px;padding:28px 24px;border-radius:25px;background:linear-gradient(135deg,#f8dce6,#f6dfb2);color:#563451;text-align:center;box-shadow:0 15px 45px #160e2b66}
+.letter h2{font-size:30px;font-weight:normal;margin:0 0 15px}
+.letter p{line-height:1.9;font-size:17px}
+footer{text-align:center;padding:20px;color:#f2d7e1;font-size:13px}
+.float{position:fixed;bottom:-40px;z-index:0;pointer-events:none;animation:rise linear infinite;opacity:.8}
+@keyframes rise{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+.spark{position:fixed;pointer-events:none;z-index:0;animation:spark 2.8s ease-in-out infinite}
+@keyframes spark{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1.3)}}
+button{font:inherit}
+.small{font:12px Arial,sans-serif;color:#f6dce5}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">A little Diwali surprise, made with love</div>
+  <h1>My Diwali<br><span class="name">is all about you</span> ✨</h1>
+  <div class="subtitle">For my Bby, my Bbu —<br>the sweetest light in my little universe.</div>
+  <a class="music" href="https://www.youtube.com/results?search_query=Udi+Udi+Jaye+Raees+official+song" target="_blank" rel="noopener">♫ Play “Udi Udi Jaye”</a>
+  <div class="small" style="margin-top:9px">Tap to open the song • music starts when you press play</div>
+</header>
+<main>
+  <div class="intro">
+    <div style="font-size:30px">🪔 ✨ 🩷 ✨ 🪔</div>
+    <p>Some people make a festival brighter just by being in it.<br><b style="color:#ffe2b7">You are that person for me.</b></p>
+    <p>तुम हो तो हर त्योहार खास है।<br>With you, even the simplest moments feel magical.</p>
+  </div>
+  <section class="grid">
+    <article class="card" onclick="toggle(this)">
+      <span class="emoji">🪔</span><h2>A little light for you</h2>
+      <p>Open your diya</p>
+      <div class="detail">तुम मेरी ज़िंदगी की वो रोशनी हो जो हर अँधेरे को खूबसूरत बना देती है।<br><i>You make everything feel warmer, softer and brighter.</i></div>
+    </article>
+    <article class="card" onclick="toggle(this)">
+      <span class="emoji">🎆</span><h2>My favourite fireworks</h2>
+      <p>A tiny burst of happiness</p>
+      <div class="detail">तुम्हारी एक smile मेरे सारे दिन को रोशन कर देती है।<br><i>If happiness had a sparkle, it would look a little like you.</i> ✨</div>
+    </article>
+    <article class="card" onclick="toggle(this)">
+      <span class="emoji">💰</span><h2>My Dhanteras wish</h2>
+      <p>Something more precious than gold</p>
+      <div class="detail">मेरे धनतेरस का सबसे कीमती धन तुम ही हो। तुम हो तो मेरे पास सब कुछ है।<br><i>You are my richest blessing.</i> ♡</div>
+    </article>
+    <article class="card" onclick="toggle(this)">
+      <span class="emoji">💌</span><h2>A tiny love letter</h2>
+      <p>Just for Bbu</p>
+      <div class="detail">Dear Bbu, I hope life gives you endless reasons to smile, dreams that come true, peace in your heart and success in everything you do. And I hope I get to cheer for you through it all. ❤️</div>
+    </article>
+    <article class="card" onclick="toggle(this)">
+      <span class="emoji">🌙</span><h2>My little prayer</h2>
+      <p>A wish wrapped in love</p>
+      <div class="detail">तुम्हारी ज़िंदगी हमेशा खुशियों, सुकून, तरक्की और प्यार से भरी रहे। May every new beginning bring you beautiful things.</div>
+    </article>
+    <article class="card" onclick="toggle(this)">
+      <span class="emoji">🧨</span><h2>One last sparkle</h2>
+      <p>Guess what?</p>
+      <div class="detail">इस दिवाली मेरी बस एक ही wish है — तुम्हारी हर खुशी में मेरा थोड़ा-सा हिस्सा हो। You + me + a thousand little celebrations. 💗</div>
+    </article>
+  </section>
+  <section class="letter">
+    <div style="font-size:32px">💗</div>
+    <h2>To my favourite person</h2>
+    <p>“मेरे जीवन की गली में तेरा प्यार ही तो है,<br>तू है तो धनवान हूँ मैं।”</p>
+    <p style="font-size:15px">A little line, a little melody, and a whole lot of love.<br><b>Happy Diwali, Bby. I’m so lucky to have you.</b></p>
+    <div style="font-size:25px">🪔 ✨ 🩷 ✨ 🪔</div>
+  </section>
+</main>
+<footer>Made with all my love • Bby ♡ Bbu</footer>
+<script>
+function toggle(card){card.classList.toggle('open')}
+const symbols=['✨','💗','🌸','🪔'];
+for(let i=0;i<18;i++){
+ const el=document.createElement('div');el.className='float';el.textContent=symbols[i%symbols.length];
+ el.style.left=(Math.random()*100)+'vw';el.style.animationDuration=(9+Math.random()*12)+'s';
+ el.style.animationDelay=(-Math.random()*18)+'s';el.style.fontSize=(14+Math.random()*17)+'px';document.body.appendChild(el);
+}
+for(let i=0;i<12;i++){
+ const el=document.createElement('div');el.className='spark';el.textContent='✦';
+ el.style.left=(Math.random()*100)+'vw';el.style.top=(Math.random()*100)+'vh';
+ el.style.animationDelay=(Math.random()*3)+'s';el.style.color='#ffe2a6';document.body.appendChild(el);
+}
+</script>
+</body>
+</html>
